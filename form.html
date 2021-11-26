@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>SIGN UP PAGE</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-13/css/all.min.css" integrity="sha512-MdXcgiHaL1yFyNjJtThjw0XkwR8tcd1aDcewr+2/whtekkfCbr79HXBNVQB4x+cVZKwnVt1mm3fP1Amj0cGClw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="form.js"></script>
+    
+
+</head>
+<body onload="onLoad()">
+    <div class="container">
+        <div class="form-name">Sign Up</div>
+        <div>
+            <form id="signup-form">
+                <div class="field-name-block">
+                    <label class="field-name">First Name</label>
+                </div>
+                <div class="field-input-block">
+                    <input id="firstName" type="text" placeholder="First Name" maxlength="15"/>
+                    <i id="firstNameWarning"class="fas fa-exclamation-circle warning warning-hide"></i>
+                </div>
+                <div class="field-name-block">
+                    <label class="field-name">Last  Name</label>
+                </div>
+                <div class="field-input-block">
+                    <input id="lastName" type="text" placeholder="Last Name" maxlength="15"/>
+                    <i id="lastNameWarning"class="fas fa-exclamation-circle warning warning-hide"></i>
+                </div>
+                <div class="field-name-block">
+                    <label class="field-name">Email</label>
+                </div>
+                <div class="field-input-block">
+                    <input id="email" type="email" placeholder="email@example.com"/>
+                    <i id="emailWarning"class="fas fa-exclamation-circle warning warning-hide"></i>
+                </div>
+                <div class="field-name-block">
+                    <label class="field-name">Mobile</label>
+                </div>
+                <div class="field-input-block">
+                    <input id="mobile" type="" placeholder="000000000" maxlength="10"/>
+                    <i id="mobileWarning"class="fas fa-exclamation-circle warning warning-hide"></i>
+                </div>
+                <div class="field-name-block">
+                    <label class="field-name">Password</label>
+                </div>
+                <div class="field-input-block">
+                    <input id="password" type="password" placeholder="Password" maxlength="20"/>
+                    <i id="passwordWarning"class="fas fa-exclamation-circle warning warning-hide"></i>
+                </div>
+                <div class="field-name-block">
+                    <label class="field-name">Confirm Password</label>
+                </div>
+                <div class="field-input-block">
+                    <input id="confirmpassword" type="password" placeholder="Confirm Password" maxlength="20"/>
+                    <i id="confirmpasswordWarning"class="fas fa-exclamation-circle warning warning-hide"></i>
+                </div>
+                <div class="button-block">
+                    <input type="button" value="Sign Up" class="button" onclick="onSubmitClick()"/>
+                    <input type="reset" value="Cancel" class="button" onclick="onCancelClick()"/>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/8c181b4b99.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
